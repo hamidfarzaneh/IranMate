@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".main_page.group.CreateGroupActivity"
+    tools:showIn="@layout/activity_create_group"
+    android:id="@+id/e">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newGpName"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="10dp"
+        android:hint="Choose a name"
+        android:layout_toStartOf="@+id/checkBox" />
+
+    <fragment
+        class="com.google.android.gms.maps.SupportMapFragment"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignStart="@+id/searchView2"
+        android:layout_below="@+id/newGpName" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Public ?"
+        android:id="@+id/checkBox"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:checked="true"
+        android:enabled="true" />
+
+</RelativeLayout>

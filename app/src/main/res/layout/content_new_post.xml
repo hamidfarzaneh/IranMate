@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".main_page.post.NewPostActivity"
+    tools:showIn="@layout/activity_new_post">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:id="@+id/newPost_imagebutton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/pluspic"
+        android:scaleType="fitCenter"
+        android:background="#03ffffff"
+        android:layout_alignParentTop="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add people"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/newPost_imagebutton"
+        android:layout_alignStart="@+id/newPost_imagebutton"
+        android:textSize="20dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp" />
+
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/imageButton3"
+        android:layout_below="@+id/newPost_imagebutton"
+        android:layout_toEndOf="@+id/textView8"
+        android:src="@drawable/plusbuttom"
+        android:paddingLeft="5dp"
+        android:scaleType="centerCrop"
+        android:background="#00ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Peoples"
+        android:id="@+id/textView9"
+
+        android:layout_below="@+id/imageButton3"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_alignParentEnd="true"
+        android:textSize="20dp"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/new_post_discription"
+        android:layout_below="@+id/textView9"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:padding="10dp"
+        android:textAlignment="textStart"
+        android:gravity="top"
+        android:hint="What happend ?" />
+
+</RelativeLayout>
